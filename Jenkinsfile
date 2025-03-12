@@ -35,4 +35,15 @@ pipeline{
 			}
 		}
 	}
+	post{
+		always{
+			echo " i have run successfully"
+		}
+		success{
+			echo "great work yuvraj"
+		}
+		failure{
+			echo "you failed"
+		}
+	}
 }
