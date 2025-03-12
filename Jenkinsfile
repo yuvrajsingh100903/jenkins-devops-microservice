@@ -1,4 +1,11 @@
 node {
+	
+	//  Declarative syntax
+		echo "Build"
+    	echo "test"
+		echo "Integration test"
+	
+	/*scripted syntax
 	stage('Build') {
 		echo "Build"
 	}
@@ -7,5 +14,5 @@ node {
 	}
 	stage('Integration Test'){
 		echo "integartion testing"
-	}
+	}*/
 }
