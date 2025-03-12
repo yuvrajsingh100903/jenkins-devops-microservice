@@ -1,4 +1,4 @@
-node {
+/*node {
 	
 	//  Declarative syntax
 		echo "Build"
@@ -14,5 +14,25 @@ node {
 	}
 	stage('Integration Test'){
 		echo "integartion testing"
-	}*/
+	}
+}*/
+pipeline{
+	agent any 
+	stages{
+		stage('build'){
+			steps{
+				echo "build"
+			}
+		}
+		stage('test'){
+			steps{
+				echo "test"
+			}
+		}
+		stage('deploy'){
+			steps{
+				echo "deploy"
+			}
+		}
+	}
 }
